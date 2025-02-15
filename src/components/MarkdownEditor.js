@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 
 const MarkdownEditor = () => {
   const [markdown, setMarkdown] = useState("");
-  
+
   useEffect(()=>{}, [markdown])
 
   return (
@@ -16,6 +16,7 @@ const MarkdownEditor = () => {
       
       <div className="preview">
         <strong>{markdown}</strong>
+        <h1>{markdown}</h1>
       </div>
     </div>
   );
