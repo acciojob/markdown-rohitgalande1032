@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
+import ReactMarkdown from 'react-markdown';
 
 const MarkdownEditor = () => {
   const [markdown, setMarkdown] = useState("");
 
-  useEffect(()=>{}, [markdown])
+  useEffect(()=>{
+    
+  }, [markdown])
+  
 
   return (
     <div className="editor-container">
@@ -14,10 +18,7 @@ const MarkdownEditor = () => {
         placeholder="Type Markdown here..."
       />
       
-      <div className="preview">
-        <strong>{markdown}</strong>
-        <h1>{markdown}</h1>
-      </div>
+      <ReactMarkdown>{markdown}</ReactMarkdown>
     </div>
   );
 };
