@@ -1,7 +1,4 @@
-.app {
-    text-align: center;
-    font-family: Arial, sans-serif;
-  }
+
   
   .editor-container {
     display: flex;
@@ -20,7 +17,6 @@
   .preview {
     width: 50%;
     height: 400px;
-    padding: 10px;
     border: 1px solid #ddd;
     background-color: #f8f8f8;
     overflow-y: auto;

@@ -17,9 +17,12 @@ const MarkdownEditor = () => {
         onChange={(e) => setMarkdown(e.target.value)}
         placeholder="Type Markdown here..."
       />
-      
+
+    <div className="preview">
       <ReactMarkdown>{markdown}</ReactMarkdown>
     </div>
+    </div>
+    
   );
 };
 
